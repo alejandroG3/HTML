@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO Y LISTAS</title>
+    <link rel="stylesheet" href="../CSS/contacto.css">
+</head>
+<body>
+    <header>
+        <img src="../img/god of war 5x5.jpg" alt="" height="100" width="100">
+        <h1>FORMULARIO Y LISTAS EN HTML</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Productos</li>
+            <li>Servicios</li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+    <section>
+        <form action="datos.php" method="post">
+            <fieldset>
+                <!-- seccion ingreso de nombre -->
+                <label for="">Nombre completo</label>
+                <input type="text" name="nombre" placeholder="&#9756; ingrase su nombre" required>
+                <br><br>
+                <hr>
+                <!-- seccion ingreso email -->
+                <label for="">Email</label>
+                <input type="text" name="email" placeholder="&#9756; ingrese su email" required>
+                <br><br>
+                <hr>
+                <!-- seccion ingreso contraseña -->
+                <label for="">contraseña</label>
+                <input type="password" name="contraseña" placeholder="&#9756; ingrese su contraseña" required>
+                <br><br>
+                <hr>
+                <!-- seccion hobbies -->
+                <label for="">selecciona tus hobbies</label>
+                <br>
+                <input type="checkbox">Cine<br>
+                <input type="checkbox">Lectura<br> 
+                <input type="checkbox">Deporte<br> 
+                <br><br>
+                <!-- seccion estado civil -->
+                <label for="">Estado civil</label><br>
+                <input type="radio" value="casado">Casado<br>
+                <input type="radio" value="soltero">Soltero<br>
+                <input type="radio" value="viudo">Viudo<br>
+                <br><br>
+                <!-- seccion opcion lista -->
+                <label for="">PROGRAMAS TECNICOS</label>
+                <select name="select">
+                <option value="">Seleccione Programa..</option>
+                <option value="">Sistemas</option>
+                <option value="">Diseño</option>
+                <option value="">Contabilidad</option>
+                </select>
+                <br><br>
+                <!-- seccion comentario -->
+                <label for="">comentario</label>
+                <textarea name="" id="" cols="40" rows="5"></textarea>
+            </fieldset>
+            <br><br>
+            <!-- seccion de botones formulario -->
+            <button type="submit">ENVIAR</button>
+            <button type="reset">CANCELAR</button>
+            <br><br>
+        </form>
+    </section>
+    <!-- seccion foter pie de pagina -->
+    <footer>
+        <p>Derechos reservados &copy;2023 &#64;Alejandro</p>
+    </footer>
+</body>
+</html>
