@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTURA / LECTURA ARRAYS</title>
+</head>
+<body>
+    <center>
+        <h1>CREACION Y LECTURA DE U8N ARRAYS</h1>
+        <h2>CICLO FOR </h2>
+        <p>a continuacion se imprimen los datos almacenados en array</p>
+        <script>
+            //creación de arrays con datos ingresados x teclado y posterior lectura
+            let num; // Longitud arrays x -usuario-
+            let datos=new Array(); //crear objeto arrays
+            //captura de datos
+            num=parseInt(prompt("ingrese cantidad a guardar en array.."));
+            for (i=0;i<num;i++){
+                datos[i]=prompt("Ingrse dato en arrays...");
+            }
+            //lectura de datos
+            for (i=0;i<num;i++){
+                document.write("<br>"+"<br>");
+                document.write(datos[i]+"<br>");
+                console.log(datos[i]);
+            }
+        </script>
+    </center>
+</body>
+</html>
